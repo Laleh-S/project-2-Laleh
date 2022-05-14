@@ -19,7 +19,7 @@ function DisplayCharacter () {
 
 
   return (
-    <div>
+    <div className="">
       
     </div>
   )
