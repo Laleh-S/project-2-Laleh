@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, useParams, useLocation } from "react-router-dom"
-//import Country from "./Country"
+import { Link, useParams } from "react-router-dom"
+import Character from "./Character"
 
 
 function DisplayCharacter () {
@@ -24,8 +24,8 @@ function DisplayCharacter () {
 
   return <section className="section">
     <div className="container">
-      <h1>Hello CharacterName!</h1>
-      <Character {...character} />
+      <h1>Random Character, gender: {genderName}</h1>
+      <Character />
     </div>
   </section>
 }
