@@ -18,11 +18,17 @@ function DisplayCharacter () {
   }, [genderName])
 
 
-  return (
-    <div className="">
-      
+  if (!character) {
+    return <p>Character Loading...</p>
+  }
+
+  return <section className="section">
+    <div className="container">
+      <h1>Hello CharacterName!</h1>
+      <Link to="/">{"⬅ Back home"}</Link>
+      <Character {...character} />
     </div>
-  )
+  </section>
 }
 
 export default DisplayCharacter
