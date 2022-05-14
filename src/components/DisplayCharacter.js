@@ -22,12 +22,12 @@ function DisplayCharacter () {
     return <p>Character Loading...</p>
   }
 
-  return <section className="section">
+  return (
     <div className="container">
       <h1>Random Character, gender: {genderName}</h1>
       <Character />
     </div>
-  </section>
+  )
 }
 
 export default DisplayCharacter
