@@ -1,6 +1,6 @@
 import React from "react"
 
-function ChosenCharacter () {
+function DisplayCharacter () {
   return (
     <div>
       
@@ -8,6 +8,6 @@ function ChosenCharacter () {
   )
 }
 
-export default ChosenCharacter
+export default DisplayCharacter
 
 
