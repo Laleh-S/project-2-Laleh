@@ -5,7 +5,7 @@ function Home() {
 
   function HandleCick(e) {
     //let gender = e.target.value
-    return 
+    return
   }
 
   return (
