@@ -15,6 +15,15 @@ function About () {
         <h3>API utilized: </h3>
         <h3>CSS packaged used: </h3>
       </div>
+
+      <div>
+        <h2>Check out our other projects:</h2>
+        <h4>Dimitar's Space Invaders(project 1)</h4>
+        <a></a>
+
+        <h4>Laleh's Pac-Man(project 1)</h4>
+        <a></a>
+      </div>
     </div>
 
 
