@@ -11,8 +11,9 @@ function About () {
       </div>
 
       <div>
-        <h2>Other Assets<h2/>
-        <h3></h3>
+        <h2>Other Assets</h2>
+        <h3>API utilized: </h3>
+        <h3>CSS packaged used: </h3>
       </div>
     </div>
 
