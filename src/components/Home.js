@@ -12,7 +12,7 @@ function Home() {
       <Link to="/displaycharacter/whatever" className="button">
         <button>Random</button>
       </Link>
-      <Link to="/displaycharacter/male" className="button">
+      <Link to="/displaycharacter/undefined" className="button">
         <button>Undefined</button>
       </Link>
       <Link to="/displaycharacter/male" className="button">
