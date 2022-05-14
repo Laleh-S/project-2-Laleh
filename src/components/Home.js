@@ -3,10 +3,6 @@ import { Link } from "react-router-dom"
 
 function Home() {
 
-  function HandleCick(e) {
-    //let gender = e.target.value
-    return
-  }
 
   return (
     <div>
@@ -14,7 +10,10 @@ function Home() {
         <button>Female</button>
       </Link>
       <Link to="/displaycharacter/whatever" className="button">
-        <button>Whatever</button>
+        <button>Random</button>
+      </Link>
+      <Link to="/displaycharacter/male" className="button">
+        <button>Undefined</button>
       </Link>
       <Link to="/displaycharacter/male" className="button">
         <button>Male</button>

@@ -6,12 +6,15 @@ import Character from "./Character"
 function DisplayCharacter () {
   const { genderName } = useParams()
   const [character, setCharacter] = React.useState(undefined)
+  const [charactersQty, setcharactersQty] = React.useState(undefined)
+
 
   React.useEffect(() => {
     async function fetchCharacters() {
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
       const characterData = await resp.json()
-      setCharacter(characterData[0])
+      setCharacter(characterData[1])
+      setcharactersQty(characterData[0].info.count)
     }
 
     fetchCharacters()
@@ -23,9 +26,9 @@ function DisplayCharacter () {
   }
 
   return (
-    <div className="container">
+    <div>
       <h1>Random Character, gender: {genderName}</h1>
-      <Character />
+      <Character id={Math.floor(Math.random()*charactersQty)} {...character} />
     </div>
   )
 }
