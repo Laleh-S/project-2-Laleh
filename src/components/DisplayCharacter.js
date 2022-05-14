@@ -18,6 +18,8 @@ function DisplayCharacter () {
     }
 
     fetchCharacters()
+    console.log(characterData);
+    console.log("working");
   }, [genderName])
 
 
