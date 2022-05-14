@@ -7,7 +7,6 @@ function Character({ name: { common }, region, flags: { png } }) {
     {/* <Link to={`/country/${common}`}> */}
     {/* // ! How to pass through more information about country, if needed.. */}
 
-    <Link to={`/country/${common}`} state={{ countryRegion: region, countryImage: png }} >
 
       <div className="card">
         <div className="card-header">

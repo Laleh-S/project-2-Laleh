@@ -7,14 +7,14 @@ function DisplayCharacter () {
   const { genderName } = useParams()
   const [character, setCharacter] = React.useState(undefined)
 
-
   React.useEffect(() => {
-    async function fetchCountry() {
+    async function fetchCharacters() {
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
       const characterData = await resp.json()
       setCharacter(characterData[0])
     }
-    fetchCountry()
+
+    fetchCharacters()
   }, [genderName])
 
 
@@ -25,7 +25,6 @@ function DisplayCharacter () {
   return <section className="section">
     <div className="container">
       <h1>Hello CharacterName!</h1>
-      <Link to="/">{"⬅ Back home"}</Link>
       <Character {...character} />
     </div>
   </section>
