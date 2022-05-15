@@ -14,9 +14,6 @@ function Navbar() {
               <Link to="/about" className="navbar-item">
                 About
               </Link>
-              <Link to="/displaycharacter" className="navbar-item">
-                Your Character
-              </Link>
             </div>
           </div>
         </nav>

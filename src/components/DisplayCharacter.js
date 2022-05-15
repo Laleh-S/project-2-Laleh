@@ -1,20 +1,25 @@
 import React from "react"
-import { Link, useParams, useLocation } from "react-router-dom"
-//import Country from "./Country"
+import { Link, useParams } from "react-router-dom"
+import Character from "./Character"
 
 
 function DisplayCharacter () {
   const { genderName } = useParams()
   const [character, setCharacter] = React.useState(undefined)
+  const [charactersQty, setcharactersQty] = React.useState(undefined)
 
 
   React.useEffect(() => {
-    async function fetchCountry() {
+    async function fetchCharacters() {
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
       const characterData = await resp.json()
-      setCharacter(characterData[0])
+      setCharacter(characterData[1])
+      setcharactersQty(characterData[0].info.count)
     }
-    fetchCountry()
+
+    fetchCharacters()
+    console.log(characterData);
+    console.log("working");
   }, [genderName])
 
 
@@ -22,13 +27,12 @@ function DisplayCharacter () {
     return <p>Character Loading...</p>
   }
 
-  return <section className="section">
-    <div className="container">
-      <h1>Hello CharacterName!</h1>
-      <Link to="/">{"⬅ Back home"}</Link>
-      <Character {...character} />
+  return (
+    <div>
+      <h1>Random Character, gender: {genderName}</h1>
+      <Character id={Math.floor(Math.random()*charactersQty)} {...character} />
     </div>
-  </section>
+  )
 }
 
 export default DisplayCharacter
