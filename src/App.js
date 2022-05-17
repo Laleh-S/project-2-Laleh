@@ -19,7 +19,7 @@ function App() {
       </main>
     </Router>
     <footer>
-        <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
+        <p className="container">This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
       </footer>
     </>
   )

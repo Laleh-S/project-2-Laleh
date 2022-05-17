@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 function Home() {
 
   return (
-    <div>
+    <div className="container">
       <h2>API PROJECT: Random Morty</h2>
-
+      <div className="buttons">
       <a href="/displaycharacter/female" className="button">
         Female
       </a>
@@ -16,6 +16,7 @@ function Home() {
       <a href="/displaycharacter/male" className="button">
         Male
       </a>
+      </div>
 
       <h2>Choose your gender, Get a character</h2>
       <p>Your character will be randomly generated.</p>
