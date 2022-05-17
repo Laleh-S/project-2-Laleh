@@ -16,7 +16,7 @@ function Home() {
       <Link to="/displaycharacter/undefined" className="button">
         <button>Undefined</button>
       </Link>
-      <Link to="/displaycharacter/male" className="button">
+      <Link to="/displaycharacter/male" className="buttongit ">
         <button>Male</button>
       </Link>
 
