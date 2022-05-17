@@ -5,6 +5,7 @@ import About from "./components/About"
 import Navbar from "./components/Navbar"
 import DisplayCharacter from "./components/DisplayCharacter"
 
+
 function App() {
   return (
     <Router>
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/characterdisplay/:gender" element={<DisplayCharacter />} />
+          <Route path="/displayCharacter/:gendername" element={<DisplayCharacter />} />
         </Routes>
       </main>
     </Router>

@@ -14,6 +14,9 @@ function Navbar() {
               <Link to="/about" className="navbar-item">
                 About
               </Link>
+              <Link to="/DisplayCharacter" className="navbar-item">
+                DisplayCharacter
+              </Link>
             </div>
           </div>
         </nav>
