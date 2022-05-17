@@ -7,16 +7,15 @@ function Home() {
     <div>
       <h2>API PROJECT: Random Morty</h2>
 
-      <Link to="/displaycharacter/female" className="button">
-        <button>Female</button>
-      </Link>
-      <Link to="/displaycharacter/whatever" className="button">
-        <button>Random</button>
-      </Link>
-
-      <Link to="/displaycharacter/male" className="button">
-        <button>Male</button>
-      </Link>
+      <a href="/displaycharacter/female" className="button">
+        Female
+      </a>
+      <a href="/displaycharacter/random" className="button">
+        Random
+      </a>
+      <a href="/displaycharacter/male" className="button">
+        Male
+      </a>
 
       <h2>Choose your gender, Get a character</h2>
       <p>Your character will be randomly generated.</p>

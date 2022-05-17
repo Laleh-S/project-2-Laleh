@@ -5,21 +5,22 @@ import Character from "./Character"
 
 function DisplayCharacter() {
   let {genderName} = useParams()
-
   const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
   const gendersAvailable = ['Female', 'Male', 'Genderless', 'Unknown']
-  // genderName = 'random' ? genderName = gendersAvailable[Math.floor(Math.random() * 3)] : countLength = 0;
-  if (genderName = 'random') {
-    genderName =  (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
-  } 
 
   React.useEffect(() => {
     async function fetchCharacters() {
-      
-      const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
+      let chosenGender = genderName;
+
+      if (genderName === 'random') {
+        chosenGender = (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
+      }
+
+      const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${chosenGender}`)
       const characterData = await resp.json()
       let randIndex = Math.floor(Math.random() * 20)
       setchosenCharacter(characterData.results[randIndex])
+      
       }
       fetchCharacters()
 
@@ -33,17 +34,16 @@ function DisplayCharacter() {
         <Character {...chosenCharacter} />
         </>
         : <h1>Character Loading...</h1>}
-
-      <Link to="/displaycharacter/female" className="button">
-        <button>Female</button>
-      </Link>
-      <Link to="/displaycharacter/random" className="button">
-        <button>Random</button>
-      </Link>
-
-      <Link to="/displaycharacter/male" className="button">
-        <button>Male</button>
-      </Link>
+      <h2> Choose a new gender</h2>
+      <a href="/displaycharacter/female" className="button">
+        Female
+      </a>
+      <a href="/displaycharacter/random" className="button">
+        Random
+      </a>
+      <a href="/displaycharacter/male" className="button">
+        Male
+      </a>
       </div>
       
     )
