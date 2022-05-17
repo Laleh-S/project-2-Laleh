@@ -4,47 +4,38 @@ import Character from "./Character"
 
 
 function DisplayCharacter() {
-  const { genderName } = useParams()
-  const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
+  let {genderName} = useParams()
 
+  const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
+  const gendersAvailable = ['Female', 'Male', 'Genderless', 'Unknown']
+  // genderName = 'random' ? genderName = gendersAvailable[Math.floor(Math.random() * 3)] : countLength = 0;
+if (genderName = 'random') {
+  genderName =  (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
+} 
 
   React.useEffect(() => {
     async function fetchCharacters() {
-      // console.log("genderName", genderName)
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
       const characterData = await resp.json()
-      let randIndex = Math.floor(Math.random() * characterData.info.count + 1)
-      console.log(randIndex);
-
+      let randIndex = Math.floor(Math.random() * 20)
       setchosenCharacter(characterData.results[randIndex])
       }
       fetchCharacters()
-      // const resp = await fetch(url)
-      // // const respJSON = await resp.json()
-      // // const allCharacters = characterData.results
-      // // console.log(allCharacters);
-      // const charactersQty = characterData[0].results.count
-      // console.log(charactersQty);
-      // // console.log("charactersQty", charactersQty)
-      // const randomIndex = Math.floor(Math.random() * charactersQty) - 1
-      // // console.log("random index", randomIndex)
-      // const characterChosen = allCharacters[randomIndex]
-      // // console.log("character", character)
 
     }, [genderName])
-  
-    if (!chosenCharacter) {
-      return <p>Character Loading...</p>
-    }
-  
+
     return (
       <div>
-        <h1>Random Character: {genderName}</h1>
-        <Character {...chosenCharacter} />  
+      {chosenCharacter ? 
+        <>
+        <h1>Random Character: </h1>
+        <Character {...chosenCharacter} />
+        </>
+        : <p>Character Loading...</p>}
       </div>
+      
     )
   }
-
 
 export default DisplayCharacter
 

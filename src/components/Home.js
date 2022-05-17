@@ -13,9 +13,7 @@ function Home() {
       <Link to="/displaycharacter/whatever" className="button">
         <button>Random</button>
       </Link>
-      <Link to="/displaycharacter/undefined" className="button">
-        <button>Undefined</button>
-      </Link>
+
       <Link to="/displaycharacter/male" className="button">
         <button>Male</button>
       </Link>
@@ -39,9 +37,9 @@ function Home() {
         <h4>Chose another character</h4>
       </div>
 
-      <footer>
-        <p>This website was developed by. Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-      </footer>
+      {/* <footer>
+        <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
+      </footer> */}
     </div>
   )
 }
