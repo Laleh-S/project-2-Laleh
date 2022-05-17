@@ -13,7 +13,10 @@ function DisplayCharacter() {
       // console.log("genderName", genderName)
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
       const characterData = await resp.json()
-      setchosenCharacter(characterData.results[0])
+      let randIndex = Math.floor(Math.random() * characterData.info.count + 1)
+      console.log(randIndex);
+
+      setchosenCharacter(characterData.results[randIndex])
       }
       fetchCharacters()
       // const resp = await fetch(url)
