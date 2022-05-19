@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <header>
-        <nav className="navbar is-dark">
+        <nav className="navbar is-warning is-spaced has-shadow">
           <div className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item">

@@ -18,15 +18,17 @@ url: "https://rickandmortyapi.com/api/character/3"
 
 function Character({ name, image, species, gender, origin, status }) {
   return (
-    <div>
-      <p>A random character of your chosen gender.</p>
-      <h2>{name}</h2>
-      <p>Species: {species} <br />
-      Origin: {origin.name} <br />
-      Current status: {status}<br />
-      Gender: {gender}</p>
-
-      <img src={image} />
+    <div className="level box media">
+      <h2 className="card-header card-header-title level-item has-text-centered">{name}</h2>
+      <div className="card card-content level-item has-text-centered">
+        <p className="block ">Species: {species} <br />
+          Origin: {origin.name} <br />
+          Current status: {status}<br />
+          Gender: {gender}</p>
+      </div>
+      <div className="card level-item has-text-centered">
+        <img src={image} />
+      </div>
     </div>
   )
 }

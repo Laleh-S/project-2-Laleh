@@ -7,13 +7,13 @@ function Home() {
     <div className="container">
       <h2>API PROJECT: Random Morty</h2>
       <div className="buttons">
-        <a href="/displaycharacter/female" className="button">
+        <a href="/displaycharacter/female" className="button is-primary">
           Female
         </a>
-        <a href="/displaycharacter/random" className="button">
+        <a href="/displaycharacter/random" className="button is-primary">
           Random
         </a>
-        <a href="/displaycharacter/male" className="button">
+        <a href="/displaycharacter/male" className="button is-primary">
           Male
         </a>
       </div>
