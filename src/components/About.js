@@ -10,7 +10,6 @@ function About() {
         <h3>Logo by: <strong>Dimitar</strong></h3>
       </section>
 
-
       <section>
         <h2>Other Assets</h2>
         <h3>API utilized: <a href="https://rickandmortyapi.com">https://rickandmortyapi.com</a></h3>
@@ -22,12 +21,6 @@ function About() {
         <h4>Dimitar&rsquo; s Space Invaders (project 1) <a href="https://dumblevor.github.io/spce_inv1/">https://dumblevor.github.io/spce_inv1/</a></h4>
         <h4>Laleh&rsquo; s Pac-Man (project 1) <a href="https://laleh-s.github.io/GA-Project-1/">https://laleh-s.github.io/GA-Project-1/</a></h4>
       </section>
-
-      <footer className="content has-text-centered is-small has-background-dark">
-        <div>
-          <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-        </div>
-      </footer>
     </div>
 
   )

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 
 function Home() {
 
@@ -46,11 +45,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <footer className="content has-text-centered is-small has-background-dark">
-        <div>
-          <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-        </div>
-      </footer>
     </div >
   )
 }
