@@ -4,45 +4,54 @@ import { Link } from "react-router-dom"
 function Home() {
 
   return (
-    <div>
-      <h2>API PROJECT: Random Morty</h2>
-
-      <Link to="/displaycharacter/female" className="button">
-        <button>Female</button>
-      </Link>
-      <Link to="/displaycharacter/whatever" className="button">
-        <button>Random</button>
-      </Link>
-      <Link to="/displaycharacter/undefined" className="button">
-        <button>Undefined</button>
-      </Link>
-      <Link to="/displaycharacter/male" className="buttongit ">
-        <button>Male</button>
-      </Link>
-
-      <h2>Choose your gender, Get a character</h2>
-      <p>Your character will be randomly generated.</p>
-
-      <h2>Instructions</h2>
-      <div>
-        <h3>Step One:</h3>
-        <h4>Chose your character</h4>
+    <div className="container-hero">
+      <div className="hero is-success">
+        <div className="hero-content">
+          <p className="title">Choose your character</p>
+          <p className="subtitle">Your character will be randomly generated.</p>
+          <div className="hero-buttons">
+            <a href="/displaycharacter/female" className="button">
+              Female
+            </a>
+            <a href="/displaycharacter/random" className="button">
+              Random
+            </a>
+            <a href="/displaycharacter/male" className="button">
+              Male
+            </a>
+          </div>
+        </div>
+        <div classname="hero-image">
+          <img src="https://rickandmortyapi.com/api/character/avatar/104.jpeg">
+          </img>
+        </div>
       </div>
+      <section className="instructions-wrapper">
+        <div className="instructions">
+          <h2>Instructions</h2>
+        </div>
 
-      <div>
-        <h3>Step Two:</h3>
-        <h4>View your character</h4>
-      </div>
-
-      <div>
-        <h3>Step Three:</h3>
-        <h4>Chose another character</h4>
-      </div>
-
-      <footer>
-        <p>This website was developed by. Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
+        <div className="steps">
+          <div>
+            <h3><strong>Step One</strong></h3>
+            <h3>Chose your character</h3>
+          </div>
+          <div>
+            <h3><strong>Step Two</strong></h3>
+            <h3>view your character</h3>
+          </div>
+          <div>
+            <h3><strong>Step Three</strong></h3>
+            <h3>Chose another character</h3>
+          </div>
+        </div>
+      </section>
+      <footer class="content has-text-centered is-small has-background-dark">
+        <div>
+          <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
+        </div>
       </footer>
-    </div>
+    </div >
   )
 }
 export default Home

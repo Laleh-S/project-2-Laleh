@@ -7,7 +7,7 @@ import DisplayCharacter from "./components/DisplayCharacter"
 
 
 function App() {
-  return (
+  return (<div>
     <Router>
       <Navbar />
       <main>
@@ -18,6 +18,7 @@ function App() {
         </Routes>
       </main>
     </Router>
+  </div>
   )
 }
 export default App

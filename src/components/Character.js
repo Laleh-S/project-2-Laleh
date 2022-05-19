@@ -16,16 +16,19 @@ type: ""
 url: "https://rickandmortyapi.com/api/character/3"
 */
 
-function Character({ name, image, species, gender }) {
+function Character({ name, image, species, gender, status }) {
   return (
-    <div>
-      <h1>{name}</h1>
-      <h2>Species: {species}</h2>
-      <h2>Gender: {gender}</h2>
-      <img src={image} />
-      <footer>
-        <p>This website was developed by. Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-      </footer>
+    <div className="character-page-content-wrapper">
+      <div className="character-content">
+        <img src={image} />
+      </div>
+      <div className="character-content">
+        <h2>Your Character: </h2>
+        <h2>{name}</h2>
+        <h4>Species: {species}</h4>
+        <h4>Gender: {gender}</h4>
+        <h4>Status: {status}</h4>
+      </div>
     </div>
   )
 }

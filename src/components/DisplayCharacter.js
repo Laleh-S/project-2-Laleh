@@ -1,50 +1,62 @@
 import React from "react"
-import {  useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Character from "./Character"
 
 
 function DisplayCharacter() {
-  const { genderName } = useParams()
+  let { genderName } = useParams()
   const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
-
+  const gendersAvailable = ['Female', 'Male', 'Genderless', 'Unknown']
 
   React.useEffect(() => {
     async function fetchCharacters() {
-      // console.log("genderName", genderName)
-      const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${genderName}`)
-      const characterData = await resp.json()
-      let randIndex = Math.floor(Math.random() * characterData.info.count + 1)
-      console.log(randIndex);
+      let chosenGender = genderName;
 
-      setchosenCharacter(characterData.results[randIndex])
+      if (genderName === 'random') {
+        chosenGender = (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
       }
-      fetchCharacters()
-      // const resp = await fetch(url)
-      // // const respJSON = await resp.json()
-      // // const allCharacters = characterData.results
-      // // console.log(allCharacters);
-      // const charactersQty = characterData[0].results.count
-      // console.log(charactersQty);
-      // // console.log("charactersQty", charactersQty)
-      // const randomIndex = Math.floor(Math.random() * charactersQty) - 1
-      // // console.log("random index", randomIndex)
-      // const characterChosen = allCharacters[randomIndex]
-      // // console.log("character", character)
 
-    }, [genderName])
-  
-    if (!chosenCharacter) {
-      return <p>Character Loading...</p>
+      const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${chosenGender}`)
+      const characterData = await resp.json()
+      let randIndex = Math.floor(Math.random() * 20)
+      setchosenCharacter(characterData.results[randIndex])
+
     }
-  
-    return (
-      <div>
-        <h1>Random Character: {genderName}</h1>
-        <Character {...chosenCharacter} />  
-      </div>
-    )
-  }
+    fetchCharacters()
 
+  }, [genderName])
+
+  return (
+    <div>
+      {chosenCharacter ?
+        <section className="">
+          < Character {...chosenCharacter} />
+        </section>
+        : <h1>Character Loading...</h1>}
+
+      <section className="">
+        <p className="">Choose another character</p>
+        <div className="">
+          <a href="/displaycharacter/female" className="button">
+            Female
+          </a>
+          <a href="/displaycharacter/random" className="button">
+            Random
+          </a>
+          <a href="/displaycharacter/male" className="button">
+            Male
+          </a>
+        </div>
+      </section>
+      <footer class="content has-text-centered is-small has-background-dark">
+        <div>
+          <p>This website was developed by Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
+        </div>
+      </footer>
+    </div>
+
+  )
+}
 
 export default DisplayCharacter
 
