@@ -4,19 +4,19 @@ function Home() {
 
   return (
     <div className="container-hero">
-      <div className="hero is-success">
+      <div className="hero">
         <div className="hero-content">
           <p className="title">Choose your character</p>
           <p className="subtitle">Your character will be randomly generated.</p>
-          <div className="hero-buttons">
-            <a href="/displaycharacter/female" className="button">
-              Female
+          <div className="card-header">
+            <a href="/displaycharacter/female" className="button is-warning is-large card-footer-item container.is-widescreen">
+            Female
             </a>
-            <a href="/displaycharacter/random" className="button">
-              Random
+            <a href="/displaycharacter/random" className="button is-danger is-large card-footer-item">
+            Random
             </a>
-            <a href="/displaycharacter/male" className="button">
-              Male
+            <a href="/displaycharacter/male" className="button card-footer-item is-primary is-large ">
+            Male
             </a>
           </div>
         </div>
@@ -49,3 +49,4 @@ function Home() {
   )
 }
 export default Home
+
