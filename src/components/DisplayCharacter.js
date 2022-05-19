@@ -1,10 +1,10 @@
 import React from "react"
-import {  useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Character from "./Character"
 
 
 function DisplayCharacter() {
-  let {genderName} = useParams()
+  const { genderName } = useParams()
   const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
   const gendersAvailable = ['Female', 'Male', 'Genderless', 'Unknown']
 
@@ -12,29 +12,29 @@ function DisplayCharacter() {
     async function fetchCharacters() {
       let chosenGender = genderName;
 
-      if (genderName === 'random') {
+      if (genderName === "random") {
         chosenGender = (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
       }
 
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?gender=${chosenGender}`)
       const characterData = await resp.json()
-      let randIndex = Math.floor(Math.random() * 20)
+      const randIndex = Math.floor(Math.random() * 20)
       setchosenCharacter(characterData.results[randIndex])
-      
-      }
-      fetchCharacters()
 
-    }, [genderName])
+    }
+    fetchCharacters()
 
-    return (
-      <div>
-      {chosenCharacter ? 
+  }, [genderName])
+
+  return (
+    <div>
+      {chosenCharacter ?
         <>
-        <h1>Random Character: </h1>
-        <Character {...chosenCharacter} />
+          <h1>Random Character: </h1>
+          <Character {...chosenCharacter} />
         </>
         : <h1>Character Loading...</h1>}
-      <h2> Choose a new gender</h2>
+      <h3> Choose a new gender</h3>
       <a href="/displaycharacter/female" className="button">
         Female
       </a>
@@ -44,10 +44,10 @@ function DisplayCharacter() {
       <a href="/displaycharacter/male" className="button">
         Male
       </a>
-      </div>
-      
-    )
-  }
+    </div>
+
+  )
+}
 
 export default DisplayCharacter
 

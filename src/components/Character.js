@@ -16,14 +16,17 @@ type: ""
 url: "https://rickandmortyapi.com/api/character/3"
 */
 
-function Character({ name, image, species, gender }) {
+function Character({ name, image, species, gender, origin, status }) {
   return (
     <div>
-      <h1>{name}</h1>
-      <h2>Species: {species}</h2>
-      <h2>Gender: {gender}</h2>
-      <img src={image} />
+      <p>A random character of your chosen gender.</p>
+      <h2>{name}</h2>
+      <p>Species: {species} <br />
+      Origin: {origin.name} <br />
+      Current status: {status}<br />
+      Gender: {gender}</p>
 
+      <img src={image} />
     </div>
   )
 }
