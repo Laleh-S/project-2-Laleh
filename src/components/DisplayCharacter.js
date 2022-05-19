@@ -37,10 +37,10 @@ function DisplayCharacter() {
         : <h1>Character Loading...</h1>}
       <div className="card card-footer">
         <h3> Choose a new gender</h3>
-        <a href="/displaycharacter/female" className="tag is-primary is-large card-footer-item">
+        <a href="/displaycharacter/female" className="tag is-warning is-large card-footer-item">
           Female
         </a>
-        <a href="/displaycharacter/random" className="tag is-primary is-large card-footer-item">
+        <a href="/displaycharacter/random" className="tag is-danger is-large card-footer-item">
           Random
         </a>
         <a href="/displaycharacter/male" className="tag is-primary is-large card-footer-item">

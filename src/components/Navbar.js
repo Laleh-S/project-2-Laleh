@@ -6,6 +6,7 @@ function Navbar() {
     <>
       <header>
         <nav className="navbar is-warning is-spaced has-shadow">
+          <img src="../assets/RandomMORTY-2.gif"></img>
           <div className="container">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item">
