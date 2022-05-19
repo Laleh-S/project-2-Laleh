@@ -23,9 +23,7 @@ function Character({ name, image, species, gender }) {
       <h2>Species: {species}</h2>
       <h2>Gender: {gender}</h2>
       <img src={image} />
-      <footer>
-        <p>This website was developed by. Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-      </footer>
+
     </div>
   )
 }

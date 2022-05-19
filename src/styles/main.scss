@@ -1,11 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+// * {
+//     margin: 0;
+//     border: 0;
+//     box-sizing: border-box;
+// }
+
+:root {
+    --font-roboto: "Roboto Slab", serif;
+    --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--font-roboto);
+    // background-color: #212426;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(90deg,
+            rgb(246, 174, 67) 100%,
+            rgba(249, 211, 180, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(90deg,
+            rgb(243, 159, 90) 100%,
+            rgba(249, 211, 180, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+
+.button {
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 100px
+}
+
+.instructions-wrapper {
+    height: 170px;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.steps h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container-about section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+    margin: 20px;
+    background-color: rgb(213, 211, 211);
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(90deg,
+    //         rgba(249, 211, 180, 1) 100%,
+    //         rgba(249, 211, 180, 0) 100%);
+    height: 50px;
+    color: grey;
+    letter-spacing: 0.9px;
+}
 
 
 
+// $footer-background-color: #363636;
+// $footer-background-color: #c02626;
+// $footer-padding: 2rem 1.5rem;
+// $box-padding: 1rem;
 
-
-
-
-
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
