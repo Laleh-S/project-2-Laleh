@@ -17,16 +17,13 @@ function About () {
 
       <div>
         <h2>Check out our other projects:</h2>
-        <h4>Dimitar&rsquo; s Space Invaders(project 1) <a href= "https://dumblevor.github.io/spce_inv1/">https://dumblevor.github.io/spce_inv1/</a></h4>
+        <h4>Dimitar&rsquo; s Space Invaders(project 1) <a href= "https://dumblevor.github.io/spce_inv1/">Space Invaders 23 by DV</a></h4>
         <a></a>
 
         <h4>Laleh&rsquo; s Pac-Man(project 1) <a href=""></a></h4>
         <a></a>
       </div>
 
-      <footer>
-        <p>This website was developed by. Laleh and Dimitar as part of SEI 23 (GA), project 2: APIs.</p>
-      </footer>
     </div>
 
   )

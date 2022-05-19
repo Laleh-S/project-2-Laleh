@@ -1,4 +1,23 @@
+#root {
+  padding: 1em;
+}
+main {
+  padding: 1em;
+  text-align: center;
+}
+footer {
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+img {
+  border: 7px double green;
+  border-radius: 15px;
+}
 
+button {
+  text-align: center;
+}
 
 $footer-background-color: #363636;
 $footer-padding: 2rem 1.5rem;
