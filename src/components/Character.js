@@ -18,10 +18,10 @@ url: "https://rickandmortyapi.com/api/character/3"
 
 function Character({ name, image, species, gender, origin, status, location }) {
   return (
-    <div className="level box media">
-      <h2 className="card-header card-header-title level-item has-text-centered">{name}</h2>
-      <div className="card card-content level-item">
-        <p className="block ">Species: {species} <br />
+    <div className=" card level box media">
+      <div className="card-content level-item is-block">
+        <h2 className="card-header-title level-item ">{name}</h2>
+        <p>Species: {species} <br />
           Origin: {origin.name} <br />
           Current status: {status}<br />
           Gender: {gender}<br />
