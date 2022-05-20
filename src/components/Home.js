@@ -1,48 +1,41 @@
 import React from "react"
-import { Link } from "react-router-dom"
-
 function Home() {
 
   return (
-    <div className="container-hero">
-      <div className="hero">
-        <div className="hero-content">
-          <p className="title">Choose your character</p>
-          <p className="subtitle">Your character will be randomly generated.</p>
-          <div className="card-header">
-            <a href="/displaycharacter/female" className="button is-warning is-large card-footer-item container.is-widescreen">
+    <div className="">
+      <div className="hero-wrapper card level box media">
+        <div className=" hero container card-level is-size-4">
+          <h1 className="card-header-title large is-size-3 ">Choose your character</h1>
+          <p className="card-header level box">Your character will be randomly generated</p>
+          <div className="">
+            <a href="/displaycharacter/female" className="button is-warning is-large">
             Female
             </a>
-            <a href="/displaycharacter/random" className="button is-danger is-large card-footer-item">
+            <a href="/displaycharacter/random" className="button is-danger is-large ">
             Random
             </a>
-            <a href="/displaycharacter/male" className="button card-footer-item is-primary is-large ">
+            <a href="/displaycharacter/male" className="button is-primary is-large">
             Male
             </a>
           </div>
         </div>
-        <div className="hero-image">
-          <img src="https://rickandmortyapi.com/api/character/avatar/104.jpeg">
-          </img>
+        <div className="hero">
+          <img src="https://rickandmortyapi.com/api/character/avatar/104.jpeg"></img>
         </div>
       </div>
-      <section className="instructions-wrapper">
-        <div className="instructions">
-          <h2>Instructions</h2>
+      <section className="">
+        <div >
+          <h2 className="hero container title has-text-centered card-header ">This Is How It Works</h2>
         </div>
-
-        <div className="steps">
-          <div>
-            <h3><strong>Step One</strong></h3>
-            <h3>Chose your character</h3>
+        <div className="card level box media is-size-4 ">
+          <div className="card-header level box">
+            <h3 className="subtitle"><strong>Step 1 - Chose your character</strong></h3>
           </div>
-          <div>
-            <h3><strong>Step Two</strong></h3>
-            <h3>view your character</h3>
+          <div className="card-header level box">
+            <h3 className="subtitle"><strong>Step 2 - View your character</strong></h3>
           </div>
-          <div>
-            <h3><strong>Step Three</strong></h3>
-            <h3>Chose another character</h3>
+          <div className="card-header level box">
+            <h3 className="subtitle"><strong>Step 3 - Chose another character</strong></h3>
           </div>
         </div>
       </section>

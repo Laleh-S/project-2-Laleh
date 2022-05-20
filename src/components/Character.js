@@ -20,7 +20,7 @@ function Character({ name, image, species, gender, origin, status, location }) {
   return (
     <div className=" card level box media">
       <div className="card-content level-item is-block">
-        <h2 className="card-header-title level-item ">{name}</h2><br />
+        <h2 className="card-item ">{name}</h2><br /> 
         <p><b>Species:</b> {species} <br /><br />
           <b>Origin:</b> {origin.name} <br /><br />
           <b>Current status:</b> {status}<br /><br />

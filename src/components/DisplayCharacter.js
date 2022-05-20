@@ -44,7 +44,7 @@ function DisplayCharacter() {
           <a href="/displaycharacter/random" className="button is-danger is-large card-footer-item">
             Random
           </a>
-          <a href="/displaycharacter/male" className="button card-footer-item is-primary is-large ">
+          <a href="/displaycharacter/male" className="button card-footer-item is-primary is-large">
             Male
           </a>
         </div>
