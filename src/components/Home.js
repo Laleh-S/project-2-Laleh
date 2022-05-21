@@ -23,7 +23,6 @@ function Home() {
           </div>
         </div>
         <div className="hero">
-
           <img className="image " src={image}></img>
         </div>
       </div>
