@@ -23,7 +23,6 @@ function Home() {
           </div>
         </div>
         <div className="hero">
-          {/* <img src="https://rickandmortyapi.com/api/character/avatar/104.jpeg"></img>  */}
           <img className="image " src={image}></img>
         </div>
       </div>
