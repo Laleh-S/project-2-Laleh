@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <header>
         <nav className="navbar is-warning is-spaced has-shadow">
-          <a href="/"><img  className="logo image image is-64x64" src={randomMorty2} /></a>
+          <Link to="/"><img  className="logo image image is-64x64" src={randomMorty2} /></Link>
           <div className="container-nav ">
             <div className="navbar-brand">
               <Link to="/" className="navbar-item is-size-3 has-text-weight-bold ml-3">
