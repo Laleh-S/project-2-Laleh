@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import image from "../assets/Rick-Morty2.jpeg"
 
 function Home() {

@@ -6,7 +6,7 @@ import Character from "./Character"
 function DisplayCharacter() {
   const { genderName } = useParams()
   const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
-  const gendersAvailable = ['Female', 'Male', 'Genderless', 'Unknown']
+  const gendersAvailable = ["Female", "Male", "Genderless", "Unknown"]
 
   React.useEffect(() => {
     async function fetchCharacters() {
