@@ -6,12 +6,13 @@ import Character from "./Character"
 function DisplayCharacter() {
   const { genderName } = useParams()
   const [chosenCharacter, setchosenCharacter] = React.useState(undefined)
-  const gendersAvailable = ["Female", "Male", "Genderless", "Unknown"]
+
 
   React.useEffect(() => {
     async function fetchCharacters() {
       let chosenGender = genderName;
-
+      const gendersAvailable = ["Female", "Male", "Genderless", "Unknown"]
+      
       if (genderName === "random") {
         chosenGender = (gendersAvailable[Math.floor(Math.random() * 3 + 1)])
       }
