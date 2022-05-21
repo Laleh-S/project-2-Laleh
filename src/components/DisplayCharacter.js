@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import Character from "./Character"
 
 
@@ -39,15 +39,15 @@ function DisplayCharacter() {
       <div className="card">
         <h3 className="card-header-title large is-size-3"> Choose a new gender</h3>
         <div className="card-footer">
-          <a href="/displaycharacter/female" className="button is-warning is-large card-footer-item">
+          <Link to="/displaycharacter/female" className="button is-warning is-large card-footer-item">
             Female
-          </a>
-          <a href="/displaycharacter/random" className="button is-danger is-large card-footer-item">
+          </Link>
+          <Link to="/displaycharacter/random" className="button is-danger is-large card-footer-item">
             Random
-          </a>
-          <a href="/displaycharacter/male" className="button card-footer-item is-primary is-large">
+          </Link>
+          <Link to="/displaycharacter/male" className="button card-footer-item is-primary is-large">
             Male
-          </a>
+          </Link>
         </div>
       </div>
     </div>

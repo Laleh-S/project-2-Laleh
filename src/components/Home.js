@@ -1,5 +1,6 @@
 import React from "react"
 import image from "../assets/Rick-Morty2.jpeg"
+import { Link } from "react-router-dom"
 
 function Home() {
 
@@ -10,19 +11,19 @@ function Home() {
           <h1 className="card-header-title large is-size-3 ">Choose your character</h1>
           <p className="card-header level box ">Your character will be randomly generated</p>
           <div className="">
-            <a href="/displaycharacter/female" className="button is-warning is-large">
-            Female
-            </a>
-            <a href="/displaycharacter/random" className="button is-danger is-large ">
-            Random
-            </a>
-            <a href="/displaycharacter/male" className="button is-primary is-large">
-            Male
-            </a>
+            <Link to="/displaycharacter/female" className="button is-warning is-large">
+              Female
+            </Link>
+            <Link to="/displaycharacter/random" className="button is-danger is-large ">
+              Random
+            </Link>
+            <Link to="/displaycharacter/male" className="button is-primary is-large">
+              Male
+            </Link>
           </div>
         </div>
         <div className="hero">
-          {/* <img src="https://rickandmortyapi.com/api/character/avatar/104.jpeg"></img>  */}
+
           <img className="image " src={image}></img>
         </div>
       </div>
