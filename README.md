@@ -1,7 +1,7 @@
 # Random Morty API
 
 ## Brief
-In this project we were asked to build a React application that consumes a public API.
+In this project we were asked to build a React application that consumes a public API. We decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. This was a pair project which we had a week to complete. 
 
 ## Requirements
 - Should Consume a public API
