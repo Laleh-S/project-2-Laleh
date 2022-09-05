@@ -24,6 +24,14 @@ In this project we were asked to build a React application that consumes a publi
 - Git
 
 
+
+## Aproach
+Inspired by the Rick & Morty TV series. We used the react-router-dom Link elements to specify different genders. We used the following API link to fetch our data https://rickandmortyapi.com .
+
+I was responsible for the Character.js page. To make the code more readable, I used destructuring props to display the data on the page. For styling we used mostly Bulma as well as some CSS.
+
+
+
 ## Timeline
 - Day 1 Whiteboarding 
 - Day 2 MVP
