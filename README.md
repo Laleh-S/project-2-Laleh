@@ -30,7 +30,7 @@ I was responsible for the Character.js page. I used the data from the response a
 ## Timeline
 - Day 1 Whiteboarding 
 - Day 2 MVP
-- Day 3 Fixing bugs
+- Day 3 Debugging
 - Day 5 Styling
 
 ## Wireframe and planning
