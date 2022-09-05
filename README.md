@@ -24,11 +24,11 @@ In this project we were asked to build a React application that consumes a publi
 - Git
 
 
-## The Timeline
-Day 1: Whiteboarding 
-Day 2: MVP
-Day 3: Fixing bugs
-Day 5: Styling
+## Timeline
+- Day 1: Whiteboarding 
+- Day 2: MVP
+- Day 3: Fixing bugs
+- Day 5: Styling
 
 ## Wireframe and planning
 
