@@ -37,6 +37,7 @@ The home page consists of three buttons: one chooses a female character, one cho
 
 ## Character page
 Once the user chooses their character, they are taken to a character page where they find the image and more details about that specific character.
+
 <img width="1427" alt="Screen Shot 2022-08-19 at 16 29 02" src="https://user-images.githubusercontent.com/92860992/185663586-30c2edbc-3137-4ef2-af8a-cdc6508fc1cc.png">
 
 
