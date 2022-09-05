@@ -10,10 +10,6 @@ In this project we were asked to build a React application that consumes a publi
 - Should have semantically clean HTML
 - Must be deployed online and accessible to the public.
 
-## Overview
-- Pair Programming
-- We built a React application using an API which had information about the Rick and Morty TV show.
-- We decided to randomly generate a character from the TV show and display the character on the page with details about that particular character as well as their image.
 
 ## Technologies used
 - HTML
@@ -23,14 +19,13 @@ In this project we were asked to build a React application that consumes a publi
 - React
 - Git
 
+## Approach
 
+We decided to randomly generate a character from the TV show and display the character on the page with details about that particular character as well as their image.
 
-## Aproach
-Inspired by the Rick & Morty TV series. We used the react-router-dom Link elements to specify different genders. We used the following API link to fetch our data https://rickandmortyapi.com .
+We used the react-router-dom Link elements to specify different genders. We used the following API link to fetch our data https://rickandmortyapi.com .
 
-I was responsible for the Character.js page. To make the code more readable, I used destructuring props to display the data on the page. For styling we used mostly Bulma as well as some CSS.
-
-
+I was responsible for the Character.js page. I used the data from the response and used destructuring props to display the data on the page. For styling we used mostly Bulma as well as some CSS.
 
 ## Timeline
 - Day 1 Whiteboarding 
