@@ -33,7 +33,7 @@ I was responsible for the Character.js page. I used the data from the response a
 - Day 3 Debugging
 - Day 5 Styling
 
-## Wireframe and planning
+## Planning and whiteboarding
 
 <img width="1124" alt="Screen Shot 2022-08-19 at 16 35 39" src="https://user-images.githubusercontent.com/92860992/185661919-0a54c27c-d7e8-4fb6-ab93-39a0cd048843.png">
 
