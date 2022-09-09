@@ -27,6 +27,9 @@ We used the react-router-dom Link elements to specify different genders. We used
 
 I was responsible for the Character.js page. I used the data from the response and used destructuring props to display the data on the page. For styling we used mostly Bulma as well as some CSS.
 
+<img width="593" alt="Screen Shot 2022-09-09 at 14 48 20" src="https://user-images.githubusercontent.com/92860992/189353872-4a73ce6e-7cc1-4ee0-a911-95dc84e7a12c.png">
+
+
 ## Timeline
 - Day 1 Whiteboarding 
 - Day 2 MVP
