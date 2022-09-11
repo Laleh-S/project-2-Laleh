@@ -1,4 +1,5 @@
 # Random Morty API
+Link to project https://random-morty.netlify.app/
 
 ## Brief
 In this project we were asked to build a React application that consumes a public API. We decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. This was a pair project which we had a week to complete. 
@@ -54,8 +55,14 @@ Once the user chooses their character, they are taken to a character page where 
 
 <img width="1427" alt="Screen Shot 2022-08-19 at 16 29 02" src="https://user-images.githubusercontent.com/92860992/185663586-30c2edbc-3137-4ef2-af8a-cdc6508fc1cc.png">
 
+## Wins 
+- Being able to create and deploy a functional project
+- Being able to meet our MVP goals
+- Learning Bulma styling in this project
+- Working in pairs and learning from others
 
-
+## Bugs 
+In the display character page, once you click on one button you cannot click on it again to get another character. 
 
 
 
