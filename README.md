@@ -44,7 +44,28 @@ We used the Insomnia platform to get our API requests. We mostly did the coding 
 
 I was responsible for the Character.js page. I used the data from the response and used destructuring props to display the data on the page. For styling we used mostly Bulma as well as some CSS.
 
-<img width="593" alt="Screen Shot 2022-09-09 at 14 48 20" src="https://user-images.githubusercontent.com/92860992/189353872-4a73ce6e-7cc1-4ee0-a911-95dc84e7a12c.png">
+````
+function Character({ name, image, species, gender, origin, status, location }) {
+  return (
+    <div className=" card level box media">
+      <div className="card-content level-item is-block">
+        <h2 className="card-item ">{name}</h2><br /> 
+        <p><b>Species:</b> {species}. <br /><br />
+          <b>Origin:</b> {origin.name}. <br /><br />
+          <b>Current status:</b> {status}.<br /><br />
+          <b>Gender:</b> {gender}.<br /><br />
+          <b>Location:</b> {location.name}.
+        </p>
+      </div>
+      <div className="card level-item has-text-centered">
+        <img src={image} />
+      </div>
+    </div>
+  )
+}
+
+export default Character
+````
 
 Once the user chooses their character, they are taken to a character page where they find the image and more details about that specific character.
 
