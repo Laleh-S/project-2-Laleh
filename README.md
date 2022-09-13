@@ -64,6 +64,9 @@ Once the user chooses their character, they are taken to a character page where 
 ## Bugs 
 In the display character page, once you click on one button you cannot click on it again to get another character. 
 
+## Challenges
+
+
 
 
 Link to your wireframes – sketches of major views / interfaces in your application
