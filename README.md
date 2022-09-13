@@ -67,6 +67,9 @@ In the display character page, once you click on one button you cannot click on 
 ## Challenges
 
 
+## Key Learnings
+This was my first time collaborating with someone and in the beginning it was a little hard as we kept pushing and pulling and overwriting each other's code. But after more practice we learned ways of using git and started to appreciate the benefits of git and colaboration. I also learned a lot about React use state and use prams.
+
 
 
 Link to your wireframes – sketches of major views / interfaces in your application
