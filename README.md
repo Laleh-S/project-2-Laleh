@@ -2,7 +2,7 @@
 Link to project https://random-morty.netlify.app/
 
 ## Brief
-In this project we were asked to build a React application that consumes a public API. Me and my partner decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. This was a pair project which we had a week to complete. 
+In this project we were asked to build a React application that consumes a public API. This was a pair project which we had a week to complete. Me and my partner decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. 
 
 ## Requirements
 - Should Consume a public API
@@ -140,7 +140,7 @@ export default Home
 In the display character page, once you click on one button you cannot click on it again to get another character. 
 
 ## Challenges
-
+I 
 
 ## Key Learnings
 This was my first time collaborating with someone and in the beginning it was a little hard as we kept pushing and pulling and overwriting each other's code. But after more practice we learned ways of using git and started to appreciate the benefits of git and colaboration. I also learned a lot about React use state and use prams.
