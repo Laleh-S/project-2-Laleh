@@ -139,13 +139,9 @@ export default Home
 ## Bugs 
 In the display character page, once you click on one button you cannot click on it again to get another character. 
 
-## Challenges
-I 
 
-## Key Learnings
-This was my first time collaborating with someone and in the beginning it was a little hard as we kept pushing and pulling and overwriting each other's code. But after more practice we learned ways of using git and started to appreciate the benefits of git and colaboration. I also learned a lot about React use state and use prams.
-
-
+## Challenges and Key Learnings
+I found this project challenging because It was my first time collaborating with someone and in the beginning it was a little hard as we kept pushing and pulling and overwriting each other's code. But after more practice we learned ways of using git and started to appreciate the benefits of git and collaboration. When I was creating the character page, I learned a lot about react hooks and props destructuring which I did not know much about before. 
 
 
 Link to your wireframes – sketches of major views / interfaces in your application
