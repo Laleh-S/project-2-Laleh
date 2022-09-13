@@ -2,7 +2,7 @@
 Link to project https://random-morty.netlify.app/
 
 ## Brief
-In this project we were asked to build a React application that consumes a public API. We decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. This was a pair project which we had a week to complete. 
+In this project we were asked to build a React application that consumes a public API. Me and my partner decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. This was a pair project which we had a week to complete. 
 
 ## Requirements
 - Should Consume a public API
@@ -23,7 +23,7 @@ In this project we were asked to build a React application that consumes a publi
 
 ## Planning and whiteboarding
 
-After we were given the project brief we decided on creating something which we can finish on time as we only had 3 days over one week to work on this. We decided on creating three pages. We did all the planning and white boarding together using an online collaboration platform called  miro. 
+After we given the project brief me and my partner decided on creating something which we can finish on time as we only had 3 days over one week to work on this. We decided on creating three pages. We did all the planning and white boarding together using an online collaboration platform called  miro. 
 
 <img width="1124" alt="Screen Shot 2022-08-19 at 16 35 39" src="https://user-images.githubusercontent.com/92860992/185661919-0a54c27c-d7e8-4fb6-ab93-39a0cd048843.png">
 
