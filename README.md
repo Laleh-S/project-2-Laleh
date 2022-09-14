@@ -2,7 +2,7 @@
 Link to project https://random-morty.netlify.app/
 
 ## Brief
-In this project we were asked to build a React application that consumes a public API. This was a pair project which we had a week to complete. Me and my partner decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. 
+In this project we were asked to build a React application that consumes a public API. This was a pair project which we had a week to complete. My partner and I decided on Rick & Morty API which we would request and display a random character depending on the user gender selection. 
 
 ## Requirements
 - Should Consume a public API
@@ -16,14 +16,14 @@ In this project we were asked to build a React application that consumes a publi
 - HTML
 - CSS
 - Bulma
-- Javascript
+- JavaScript
 - React
 - Git
 
 
 ## Planning and whiteboarding
 
-After we given the project brief me and my partner decided on creating something which we can finish on time as we only had 3 days over one week to work on this. We decided on creating three pages. We did all the planning and white boarding together using an online collaboration platform called  miro. 
+After being given the project brief my partner and I decided on creating something which we can finish on time as we only had 3 days over one week to work on this. We decided on creating three pages. We did all the planning and white boarding together using an online collaboration platform called  miro. 
 
 <img width="1124" alt="Screen Shot 2022-08-19 at 16 35 39" src="https://user-images.githubusercontent.com/92860992/185661919-0a54c27c-d7e8-4fb6-ab93-39a0cd048843.png">
 
@@ -142,6 +142,8 @@ In the display character page, once you click on one button you cannot click on 
 
 ## Challenges and Key Learnings
 I found this project challenging because It was my first time collaborating with someone and in the beginning it was a little hard as we kept pushing and pulling and overwriting each other's code. But after more practice we learned ways of using git and started to appreciate the benefits of git and collaboration. When I was creating the character page, I learned a lot about react hooks and props destructuring which I did not know much about before. 
+
+## Future Development
 
 
 Link to your wireframes – sketches of major views / interfaces in your application
